@@ -1,15 +1,3 @@
-"""
-## Ejercicio 7: La Gestión del Kwik-E-Mart
-
-Crear una clase `KwikEMart`, la cual estará representada (atributos internos) mediante varias listas de objetos del tipo `ProductoKwikE`. Cada lista corresponde a un pasillo o sección del mercado (ej: "Bebidas", "Snacks", "Conveniencia").
-
-La clase debe contener métodos para facilitar:
-*   Controlar el stock de productos (añadir un nuevo producto a un pasillo, remover un producto del inventario, actualizar stock).
-*   Calcular cuántos productos expiran en las próximas 24 horas y removerlos del inventario (simulando que Apu los desecha).
-
-**Importante:** Pueden agregar más atributos y métodos si lo consideran necesario (ej: método para buscar un producto por su ID).
-"""
-
 from ejercicio5 import ProductoKwikE
 
 class KwikEMart:
