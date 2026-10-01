@@ -30,14 +30,17 @@ class ProductoKwikE:
             self.stock = stock
 
     def calcular_vencimiento(self):
-
-        dias_para_vencer = (self.fecha_vencimiento - date.today()).days
-        if dias_para_vencer < 0:
+        dias = (self.fecha_vencimiento - date.today()).days
+        if dias < 0:
             self.stock = 0
             return f'el producto: {self.descripcion} esta vencido, se retiro el stock.'
         else:
-            return dias_para_vencer
-            
+            return dias
+
+    def dias_para_vencer(self):
+        dias_para_vencer = (self.fecha_vencimiento - date.today()).days
+        return dias_para_vencer
+ 
     def __str__(self):
         return f' Producto: {self.descripcion} | ID: {self.id_producto} | Precio: ${self.precio} | Stock: {self.stock} '
     
