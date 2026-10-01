@@ -1,0 +1,1 @@
+#el ejercicio 6 fue resuelto en el archivo ejercicio5.py, ya que en la llamada de meet se dijo que era valido
